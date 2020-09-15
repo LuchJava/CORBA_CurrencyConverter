@@ -1,0 +1,12 @@
+module CurrConvertApp{
+	interface CurrConvert{
+		string getSymbols();
+		boolean symbolExist(in string symbol);
+		string convertAll(in string base);
+		string convertAllWithAmount(in double amount, in string base);
+		string convertSome(in string base, in string target);
+		string convertSomeWithAmount(in double amount, in string base, in string target);
+		string displaySymbols();
+		oneway void shutdown();
+	};
+};
